@@ -28,7 +28,7 @@
 ## ⚙️ Installation
 
 ### Prerequisites
-- **Python 
+- **Python**
 - **pip** (Python package manager)
 - **4GB+ RAM** (8GB recommended)
 - **GPU with CUDA** (optional, for faster inference)
