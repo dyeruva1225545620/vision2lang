@@ -28,7 +28,7 @@
 ## ⚙️ Installation
 
 ### Prerequisites
-- **Python 3.10, 3.11, or 3.12** (Python 3.13+ may have compatibility issues)
+- **Python**
 - **pip** (Python package manager)
 - **4GB+ RAM** (8GB recommended)
 - **GPU with CUDA** (optional, for faster inference)
@@ -151,41 +151,6 @@ By building this project, you'll understand:
 
 ---
 
-## 🔧 Troubleshooting
-
-**Python 3.13 Compatibility Issue**
-```bash
-ModuleNotFoundError: No module named 'pyaudioop'
-```
-**Solution:** Use Python 3.10, 3.11, or 3.12 instead:
-```bash
-# Check available Python versions
-py -0  # Windows
-python3 --version  # Mac/Linux
-
-# Install with specific version
-py -3.12 -m pip install -r requirements.txt
-py -3.12 src/app.py
-```
-
-**CUDA Out of Memory?**
-- Models automatically fall back to CPU
-- Or use smaller batch sizes
-
-**Webcam not working?**
-- Check camera permissions
-- Ensure no other app is using the webcam
-
-**Slow inference?**
-- First run downloads models (~500MB)
-- Subsequent runs are much faster
-- GPU highly recommended for real-time use
-
-**"No module named X" errors?**
-- Make sure you installed requirements: `pip install -r requirements.txt`
-- Try upgrading pip: `pip install --upgrade pip`
-
----
 
 ## 🤝 Contributing
 
