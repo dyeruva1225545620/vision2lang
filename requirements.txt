@@ -1,0 +1,11 @@
+torch>=2.0
+transformers>=4.35
+pillow
+opencv-python
+gradio  # Compatible with Python 3.13
+ftfy
+sentencepiece
+einops
+gtts           # optional (for text-to-speech)
+soundfile      # required for playing audio in Gradio
+
